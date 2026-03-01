@@ -2,24 +2,96 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Rettungsdienst 🚑</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rettungsdienst Rangsystem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="overlay">
-        <header>
-            <h1>Willkommen beim Rettungsdienst!</h1>
-        </header>
+<header>
+    <h1>🚑 Rettungsdienst Rangsystem</h1>
+    <nav>
+        <a href="#ausbildung">Ausbildung</a>
+        <a href="#fachpersonal">Fachpersonal</a>
+        <a href="#fuehrung">Führung</a>
+        <a href="#fahrzeuge">Fahrzeuge</a>
+    </nav>
+</header>
 
-        <main>
-            <div class="buttons">
-                <button onclick="medikamente()">Medikamente Wirkung</button>
-                <button onclick="raenge()">Ränge</button>
-            </div>
-        </main>
+<section id="ausbildung">
+    <h2>🔰 Ausbildungsebene</h2>
+    <div class="card">
+        <h3>Praktikant</h3>
+        <p>Darf keine Fahrzeuge fahren. Beobachtet Einsätze.</p>
     </div>
+    <div class="card">
+        <h3>Azubi</h3>
+        <p>Darf KTW fahren – nur mit Rettungshelfer/RS/NotSan als Partner.</p>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<section id="fachpersonal">
+    <h2>🚑 Fachpersonal</h2>
+    <div class="card">
+        <h3>Rettungshelfer</h3>
+        <p>KTW eigenständig, RTW als Beifahrer.</p>
+    </div>
+    <div class="card">
+        <h3>Rettungssanitäter</h3>
+        <p>KTW & RTW Fahrer.</p>
+    </div>
+    <div class="card">
+        <h3>Notfallsanitäter</h3>
+        <p>RTW Transportführer, NEF Fahrer.</p>
+    </div>
+</section>
+
+<section id="fuehrung">
+    <h2>🔥 Führungsebene</h2>
+    <div class="card">
+        <h3>OrgL</h3>
+        <p>Darf KDOW fahren. Organisiert Einsätze.</p>
+    </div>
+    <div class="card">
+        <h3>Wachleiter</h3>
+        <p>Leitet eine Rettungswache.</p>
+    </div>
+    <div class="card">
+        <h3>Ärztlicher Leiter Rettungsdienst</h3>
+        <p>Höchste medizinische Instanz.</p>
+    </div>
+</section>
+
+<section id="fahrzeuge">
+    <h2>🚨 Fahrzeugberechtigungen</h2>
+    <table>
+        <tr>
+            <th>Fahrzeug</th>
+            <th>Berechtigt</th>
+        </tr>
+        <tr>
+            <td>KTW</td>
+            <td>Azubi (mit Partner), RH, RS, NotSan</td>
+        </tr>
+        <tr>
+            <td>RTW</td>
+            <td>RS (Fahrer), NotSan (Transportführer)</td>
+        </tr>
+        <tr>
+            <td>NEF</td>
+            <td>NotSan (Fahrer), Notarzt</td>
+        </tr>
+        <tr>
+            <td>KDOW</td>
+            <td>OrgL, Wachleiter, Bereichsleiter, RD-Leiter, ÄLRD</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>© 2026 Rettungsdienst System | Teamstadt RP</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
